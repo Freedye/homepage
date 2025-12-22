@@ -4,32 +4,12 @@
 		<meta charset="UTF-8" />
 		<title>お帰りなさい</title>
 		<link rel="icon" href="img/makise.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
-		<script type="text/javascript" src="jquery-3.7.1.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="date.js"></script>
 	</head>
 	<body>
 		<div class="maincontainer">
-			<div class="time" id="time">
-				<script>
-					function updateClock() {
-						var days = ['DOMENICA','LUNEDÌ','MARTEDÌ','MERCOLEDÌ','GIOVEDÌ','VENERDÌ','SABATO'];
-						var m = new Date();
-						var dateString =
-						  (days[ m.getDay() ]) + " " +
-						  ("0" + (m.getMonth()+1)).slice(-2) +"/"+
-						  ("0" + m.getDate()).slice(-2) + "/" +
-						  m.getFullYear() +" "+
-						  ("0" + m.getHours()).slice(-2) + ":" +
-						  ("0" + m.getMinutes()).slice(-2) + ":" +
-						  ("0" + m.getSeconds()).slice(-2);
-						
-						document.getElementById('time').innerHTML = dateString;
-
-						setTimeout(updateClock, 1000);
-					}
-					updateClock();
-				</script>
-			</div>
+			<div class="time" id="time"></div>
 			<div class="main" id="main1">
 				<div class="sidebar" style="background-image: url(img/m1.jpg);"></div>
 				<div class="welcome">お帰りなさい</div>
