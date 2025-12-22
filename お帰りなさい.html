@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>お帰りなさい</title>
+		<link rel="icon" href="img/makise.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript">			
+			function show( show1 ) {
+			  document.getElementById(show1).style.display="block";
+			}
+			function hide( hide1 ) {
+			  document.getElementById(hide1).style.display="none";
+			}
+			function tog( tog1 ) {
+			  document.getElementById(tog1).style.backgroundColor="#777777";
+			}
+			function toh( toh1 ) {
+			  document.getElementById(toh1).style.backgroundColor="#ffffff";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="maincontainer">
+			<div class="bottomcontainer">
+				<div class="searchbar">
+					<form name="form1" action="http://duckduckgo.com/q=" target="_blank" method="get" >
+						<input type="text" autocomplete="off" placeholder="duckduckgo search..." name="q" class="searchinput"></input>
+					</form>
+				</div>
+			</div>
+			<div class="time" id="time">
+				<script>
+					//document.getElementById("main").innerHTML = Date();
+					function updateClock() {
+						var days = ['DOMENICA','LUNEDÌ','MARTEDÌ','MERCOLEDÌ','GIOVEDÌ','VENERDÌ','SABATO'];
+						var m = new Date();
+						var dateString =
+						  (days[ m.getDay() ]) + " " +
+						  ("0" + (m.getMonth()+1)).slice(-2) +"/"+
+						  ("0" + m.getDate()).slice(-2) + "/" +
+						  m.getFullYear() +" "+
+						  ("0" + m.getHours()).slice(-2) + ":" +
+						  ("0" + m.getMinutes()).slice(-2) + ":" +
+						  ("0" + m.getSeconds()).slice(-2);
+						
+						// set the content of the element with the ID time to the formatted string
+						document.getElementById('time').innerHTML = dateString;
+
+						// call this function again in 1000ms
+						setTimeout(updateClock, 1000);
+					}
+					updateClock(); // initial call
+				</script>
+			</div>
+			<div class="main" id="main1">
+				<div class="sidebar" style="background-image: url(img/m1.jpg);"></div>
+				<div class="welcome">お帰りなさい</div>
+				<div class="Subtitle">Relativity theory is so romantic. And so sad...</div>
+				<div class="bookmarkscontainer">
+					<ul>
+						<li><a href="http://boards.4chan.org/a/" class="clink" target="_blank">/a/</a>
+						<li><a href="http://boards.4chan.org/c/" class="clink" target="_blank">/c/</a>
+						<li><a href="https://boards.4chan.org/jp/" class="clink" target="_blank">/jp/</a>
+						<li><a href="http://boards.4chan.org/g/" class="clink" target="_blank">/g/</a>
+						<li><a href="http://boards.4chan.org/wg/" class="clink" target="_blank">/wg/</a>
+					</ul>
+					<ul>
+						<li><a href="https://wiki.archlinux.org" class="clink" target="_blank">Archwiki</a>
+						<li><a href="https://aur.archlinux.org/" class="clink" target="_blank">AUR</a>
+						<li><a href="https://github.com/Freedye" class="clink" target="_blank">Github</a>
+						<li><a href="https://docs.mesa3d.org/relnotes.html" class="clink" target="_blank">Mesa changelog</a>
+						<li><a href="https://kernelnewbies.org/LinuxChanges" class="clink" target="_blank">Kernel changelog</a>
+					</ul>
+					<ul>
+						<li><a href="https://www.gmail.com/" class="clink" target="_blank">Mail</a>
+						<li><a href="http://nyaa.si/" class="clink" target="_blank">Nyaa</a>
+						<li><a href="https://old.reddit.com" class="clink" target="_blank">Reddit</a>
+						<li><a href="https://twitter.com/" class="clink" target="_blank">Twitter</a>
+						<li><a href="https://www.youtube.com/" class="clink" target="_blank">Youtube</a>
+					</ul>
+					<ul>
+						<li><a href="https://anilist.co/user/Freedye/animelist" class="clink" target="_blank">Anilist</a>
+						<li><a href="https://www.protondb.com/" class="clink" target="_blank">ProtonDB</a>
+						<li><a href="https://github.com/GloriousEggroll/proton-ge-custom" class="clink" target="_blank">Proton-GE</a>
+						<li><a href="https://www.prydwen.gg/wuthering-waves/" class="clink" target="_blank">Prydwen</a>
+						<li><a href="https://www.wowhead.com/" class="clink" target="_blank">Wowhead</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
