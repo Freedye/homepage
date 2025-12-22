@@ -6,12 +6,12 @@
 
 input {
 	font-family: haxrcorp, monospace;
-	font-size:15px;
+	font-size:16px;
 }
 
 body{
 	font-family: haxrcorp, monospace;
-	font-size:15px;
+	font-size:16px;
 	background-color:#F8F8F8;
 	background-image: url("img/bg_tile.jpg");
 	background-repeat: repeat;
@@ -79,7 +79,7 @@ body{
 .welcome {
 	line-height:18px;
 	font-family: haxrcorp, monospace;
-	font-size:22px;
+	font-size:24px;
 	position:absolute;
 	top:80px;
 	width:300px;
@@ -92,11 +92,11 @@ body{
 .subtitle {
 	line-height:24px;
 	font-family: haxrcorp, monospace;
-	font-size:18px;
+	font-size:16px;
 	position:absolute;
 	top:100px;
 	width:300px;
-	left:0px;
+	left:1px;
 	right:0px;
 	margin-left:auto;
 	margin-right:auto;
@@ -144,7 +144,7 @@ a:hover {
 }
 
 .clink {
-	font-size: 16px;
+	font-size:16px;
 	text-decoration:none;
 	line-height: 16px;
 	color:#000000;

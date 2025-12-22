@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8" />
@@ -10,7 +11,6 @@
 		<div class="maincontainer">
 			<div class="time" id="time">
 				<script>
-					//document.getElementById("main").innerHTML = Date();
 					function updateClock() {
 						var days = ['DOMENICA','LUNEDÌ','MARTEDÌ','MERCOLEDÌ','GIOVEDÌ','VENERDÌ','SABATO'];
 						var m = new Date();
@@ -23,19 +23,17 @@
 						  ("0" + m.getMinutes()).slice(-2) + ":" +
 						  ("0" + m.getSeconds()).slice(-2);
 						
-						// set the content of the element with the ID time to the formatted string
 						document.getElementById('time').innerHTML = dateString;
 
-						// call this function again in 1000ms
 						setTimeout(updateClock, 1000);
 					}
-					updateClock(); // initial call
+					updateClock();
 				</script>
 			</div>
 			<div class="main" id="main1">
 				<div class="sidebar" style="background-image: url(img/m1.jpg);"></div>
 				<div class="welcome">お帰りなさい</div>
-				<div class="Subtitle">Relativity theory is so romantic. And so sad...</div>
+				<div class="subtitle">Relativity theory is so romantic. And so sad...</div>
 				<div class="bookmarkscontainer">
 					<ul>
 						<li><a href="http://boards.4chan.org/a/" class="clink" target="_blank">/a/</a>
