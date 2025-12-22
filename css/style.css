@@ -4,11 +4,6 @@
     src: url('haxrcorpttf.ttf');
 }
 
-input {
-	font-family: haxrcorp, monospace;
-	font-size:16px;
-}
-
 body{
 	font-family: haxrcorp, monospace;
 	font-size:16px;
@@ -67,7 +62,6 @@ body{
 
 .time {
 	color:#FFFFFF;
-	font-family: haxrcorp, monospace;
 	font-size:16px;
 	position: absolute;
 	top: -18px;
@@ -78,7 +72,6 @@ body{
 
 .welcome {
 	line-height:18px;
-	font-family: haxrcorp, monospace;
 	font-size:24px;
 	position:absolute;
 	top:80px;
@@ -91,7 +84,6 @@ body{
 
 .subtitle {
 	line-height:24px;
-	font-family: haxrcorp, monospace;
 	font-size:16px;
 	position:absolute;
 	top:100px;
