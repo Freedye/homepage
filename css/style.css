@@ -16,12 +16,22 @@ body{
 	width:672px;
 	height:319px;
 	position: absolute;
-	top: 0px;
-	bottom:100px;
-    left: 0px;
-    right: 0px;
-    margin: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, calc(-50% - 50px));
 	background-color:transparent;
+}
+
+@media (max-width: 700px) {
+	.maincontainer {
+		zoom: 0.75;
+	}
+}
+
+@media (max-width: 480px) {
+	.maincontainer {
+		zoom: 0.5;
+	}
 }
 
 .main {
