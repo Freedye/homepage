@@ -12,8 +12,7 @@ window.addEventListener('load', function(event) {
             ("0" + m.getSeconds()).slice(-2);
         
         document.getElementById('time').innerHTML = dateString;
-
-        setTimeout(updateClock, 1000);
     }
     updateClock();
+    setInterval(updateClock, 1000);
 }); 
